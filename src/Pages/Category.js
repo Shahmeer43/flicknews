@@ -39,11 +39,19 @@ export default function Category() {
     let mainHeading = category.charAt(0).toUpperCase() + category.slice(1);
     // console.log(mainHeading);
     setHeader(mainHeading);
-    let url = `https://newsapi.org/v2/top-headlines?country&apiKey=1e736cb6441540a4885d9c60e6e6e45b&q=${category}`;
-    let urlData = await fetch(url);
-    if (urlData.status === 426 || urlData.status === 400) {
+
+    let urlData;
+
+    try {
+      let url = `https://newsapi.org/v2/top-headlines?country&apiKey=1e736cb6441540a4885d9c60e6e6e45b&q=${category}`;
+      urlData = await fetch(url);
+      if (!urlData.ok) {
+        throw new Error(`HTTP error! Status: ${urlData.status}`);
+      }
+    } catch (error) {
       urlData = dummyData;
     }
+
     let jsonData = await urlData.json();
     let filteredData = filterTheData(jsonData);
 
