@@ -41,19 +41,21 @@ export default function Category() {
     setHeader(mainHeading);
 
     let urlData;
-
+    let filteredData;
     try {
       let url = `https://newsapi.org/v2/top-headlines?country&apiKey=1e736cb6441540a4885d9c60e6e6e45b&q=${category}`;
       urlData = await fetch(url);
+      let jsonData = await urlData.json();
+      filteredData = filterTheData(jsonData);
       if (!urlData.ok) {
         throw new Error(`HTTP error! Status: ${urlData.status}`);
       }
     } catch (error) {
       urlData = dummyData;
+      filteredData = filterTheData(urlData);
+      console.log(urlData);
+      console.log("dskfnksd");
     }
-
-    let jsonData = await urlData.json();
-    let filteredData = filterTheData(jsonData);
 
     if (filteredData.length < 6) {
       let counter = 6 - filteredData.length;
