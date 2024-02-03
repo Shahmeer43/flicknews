@@ -3,10 +3,13 @@ import Home from "./Pages/Home";
 import Category from "./Pages/Category";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import { RemoveTrailingSlash } from "./Components/RemoveTrailingSlash";
 
 function App() {
   return (
     <>
+      <RemoveTrailingSlash />
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/About" element={<About />} />
