@@ -23,7 +23,6 @@ export default function Slider() {
 
       if (imageIndex === slidingImages.length - 1) {
         setImageIndex(0);
-        // console.log(true);
       }
     }, 5000);
 
