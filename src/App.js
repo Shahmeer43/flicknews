@@ -7,10 +7,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="" element={<Home />} />
         <Route exact path="/About" element={<About />} />
         <Route exact path="/Contact" element={<Contact />} />
         <Route exact path="/category" element={<Category />} />
+        {/* <Route path="*" component="" /> */}
       </Routes>
     </>
   );
