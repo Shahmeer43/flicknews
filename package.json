@@ -1,6 +1,6 @@
 {
-  "name": "flicknews",
   "homepage": "https://Shahmeer43.github.io/flicknews",
+  "name": "flicknews",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
