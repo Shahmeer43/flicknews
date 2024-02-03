@@ -1,0 +1,119 @@
+.news-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  /* border-radius: 5px; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  /* border: 1px solid red; */
+  background-color: white;
+  overflow: hidden;
+}
+
+.imageContainer {
+  flex: 0.5;
+  background-color: grey;
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid red; */
+  /* border-radius: 5px 5px 0 0; */
+
+  text-align: center;
+}
+
+.newsImage {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  height: 50%;
+  flex: 0.5;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  /* border-radius: 0 0 5px 5px; */
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.news-title {
+  flex: 0.82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.source-link {
+  flex: 0.18;
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: flex;
+  align-self: flex-end; */
+}
+
+.source-link a {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #75aa14;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 0 0 5px 5px; */
+
+  /* padding: 0.5rem 1rem; */
+  /* border-radius: 5px; */
+}
+
+.linkText {
+  display: block;
+}
+
+.source-link a:hover {
+  background-color: rgba(117, 170, 20, 0.8);
+  /* color: black; */
+}
+
+/* Responsivness Work */
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .news-item {
+    height: 80%;
+    width: 45%;
+  }
+
+  /* .news-title {
+    flex: 0.78;
+  }
+
+  .source-link {
+    flex: 0.22;
+  } */
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .news-item {
+    /* min-height: 50%; */
+    width: 90%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .news-item {
+    /* min-height: 50%; */
+    width: 100%;
+  }
+}

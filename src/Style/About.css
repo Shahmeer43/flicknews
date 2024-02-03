@@ -1,0 +1,97 @@
+.aboutContainer {
+  overflow-x: hidden;
+}
+
+.imageContainerAbout {
+  background-image: url("/public/Images/post_1.jpg");
+  min-height: 40vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  font-family: "Nunito", sans-serif;
+  /* border: 1px solid red; */
+}
+
+.overlayAbout {
+  min-height: 40vh;
+  max-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.aboutTextContainer {
+  min-height: 22vh;
+  max-width: 70vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aboutTitleContainer {
+  min-height: 7vh;
+}
+
+.aboutMissionContainer {
+  min-height: 14vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.line {
+  min-height: 5vh;
+  text-align: center;
+}
+
+.whatWeProvideTitle {
+  text-align: center;
+  min-height: 10vh;
+  font-family: "Nunito", sans-serif;
+}
+
+.whatWeProvideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 45vh;
+  font-family: "Nunito", sans-serif;
+}
+
+.what {
+  min-height: 15rem;
+  width: 15rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f7f5;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.what h2 {
+  flex: 0.2;
+}
+
+.what p {
+  flex: 0.8;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .aboutTitleContainer {
+    text-align: center;
+  }
+  .whatWeProvideContainer {
+    flex-direction: column;
+  }
+}

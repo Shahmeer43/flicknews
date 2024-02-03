@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarContainer {
+  /* background-color: #3b3939; */
+  /* background-color: #6e6e6e; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 1rem;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+.outliner {
+  -webkit-text-stroke: 0.5px #baff39;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.brandName div {
+  margin: 0.1rem;
+  padding: 0.3rem 1rem;
+}
+
+.brandName h2 {
+  margin-left: 0.5rem;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: white;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b3939;
+}
+
+.navLinks {
+  margin-right: 2rem;
+}
+
+.navLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinks ul li {
+  margin-right: 0.3rem;
+}
+
+.link {
+  color: white;
+  padding: 0.5rem;
+  font-weight: 500;
+  /* border-right: 1px solid rgba(189, 183, 183, 0.5); */
+}
+
+.currentPageHighlight {
+  border-bottom: 4px solid #87c512;
+  /* color: black; */
+}
+
+.link:hover:not(.currentPageHighlight) {
+  background-color: #87c512;
+  color: black;
+}
+
+/* Responsiveness Work */
+
+.menuToggler {
+  display: none;
+}
+
+.mobileMenuContainer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbarContainer {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* border: 1px solid red; */
+  }
+
+  .menuToggler {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    /* border: 1px solid red; */
+  }
+
+  .menuTogglerIcon {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .mobileMenuContainer {
+    border: 1px solid green;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .mobileOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mobileMenuLink {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .crossContainer {
+    position: absolute;
+    color: white;
+    left: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+  }
+}

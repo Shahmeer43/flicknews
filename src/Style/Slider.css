@@ -1,0 +1,77 @@
+.sliderContainer {
+  height: 100vh;
+  background-color: steelblue;
+  background-image: url("/public/Images/post_1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: background-image 0.8s ease-in-out 0.3s;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.slider-h1 {
+  /* color: #ffcc00; */
+  color: #87c512;
+  margin-bottom: 1rem;
+  transform: translateY(-11rem);
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+
+  animation: slider-h1-Animation 1s ease-in-out 100ms forwards;
+}
+
+.slider-para {
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0.5rem 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  /* font-weight: 400; */
+  font-size: 1.075rem;
+  line-height: 1.4rem;
+  /* border: 1px solid red; */
+  max-width: 70rem;
+  transform: translateX(-80rem);
+  animation: slider-para-Animation 1s ease-in-out 1s forwards;
+}
+
+.slider-link {
+  color: black;
+  font-weight: bold;
+  /* background-color: #3b3939; */
+  background-color: #87c512;
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+}
+
+.slider-link:hover {
+  background-color: rgba(135, 197, 18, 0.75);
+}
+
+@keyframes slider-h1-Animation {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slider-para-Animation {
+  to {
+    transform: translate(0);
+  }
+}
