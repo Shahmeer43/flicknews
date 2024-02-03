@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export default function Slider() {
   const [imageIndex, setImageIndex] = useState(1);
   let slidingImages = [
-    "./Images/post_1.jpg",
-    "./Images/post_2.jpg",
-    "./Images/post_3.jpg",
-    "./Images/post_4.jpg",
-    "./Images/post_5.jpg",
-    "./Images/post_6.jpg",
+    "Images/post_1.jpg",
+    "Images/post_2.jpg",
+    "Images/post_3.jpg",
+    "Images/post_4.jpg",
+    "Images/post_5.jpg",
+    "Images/post_6.jpg",
   ];
 
   useEffect(() => {
