@@ -53,8 +53,8 @@ export default function Category() {
     } catch (error) {
       urlData = dummyData;
       filteredData = filterTheData(urlData);
-      console.log(urlData);
-      console.log("dskfnksd");
+      // console.log(urlData);
+      // console.log("dskfnksd");
     }
 
     if (filteredData.length < 6) {
