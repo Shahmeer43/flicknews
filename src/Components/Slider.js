@@ -15,10 +15,6 @@ export default function Slider() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // console.log(slidingImages.length + " length of sliding images");
-      // console.log(document.querySelector(".sliderContainer"));
-      // console.log(`url(${slidingImages[imageIndex]})`);
-      // console.log(imageIndex);
       document.querySelector(
         ".sliderContainer"
       ).style.backgroundImage = `url(${slidingImages[imageIndex]})`;
