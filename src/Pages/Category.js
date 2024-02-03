@@ -39,7 +39,7 @@ export default function Category() {
     let mainHeading = category.charAt(0).toUpperCase() + category.slice(1);
     // console.log(mainHeading);
     setHeader(mainHeading);
-    let url = `https://newsapi.org/v2/top-headlines?country&apiKey=1e736cb6441540a4885d9c60e6e6e45b&q=${category}`;
+    let url = `https://newsapi.org/v2/top-headlines?country&apiKey=7a6b49dcbf424fe3b222496f4a9efda4&q=${category}`;
     let urlData = await fetch(url);
     let jsonData = await urlData.json();
     let filteredData = filterTheData(jsonData);
