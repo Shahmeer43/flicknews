@@ -81,7 +81,7 @@ export default function Navbar({ page }) {
         <ul>
           <li>
             <Link
-              to="/"
+              to="https://shahmeer43.github.io/flicknews/"
               className={`link ${
                 page === "Home" ? "currentPageHighlight" : ""
               }`}
