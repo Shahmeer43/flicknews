@@ -25,7 +25,6 @@ export default function Slider() {
         setImageIndex(0);
         // console.log(true);
       }
-      // console.log(imageIndex);
     }, 5000);
 
     return () => clearInterval(interval);
