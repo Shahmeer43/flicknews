@@ -45,6 +45,5 @@ export default function Slider() {
         </Link>
       </div>
     </div>
-    // 1e736cb6441540a4885d9c60e6e6e45b new api key
   );
 }
